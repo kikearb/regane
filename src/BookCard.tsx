@@ -22,7 +22,6 @@ export const BookCard: FunctionComponent<BookCardProps> = ({ title, author, cove
       overflow: 'hidden',
       minHeight: 160,
       width: '100%',
-      maxWidth: 480,
     }}
   >
     <div

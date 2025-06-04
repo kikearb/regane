@@ -38,7 +38,7 @@ function getRandomFontFamily() {
 
 export function AnimatedWord({
   words,
-  interval = 2000,
+  interval = 1500,
   typingSpeed = 80,
   highlightColor = '#ffe066',
 }: AnimatedWordProps) {

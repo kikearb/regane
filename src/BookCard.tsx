@@ -8,32 +8,34 @@ interface BookCardProps {
 }
 
 export const BookCard: FunctionComponent<BookCardProps> = ({ title, author, cover, download }) => (
-  <div
+  <li
     style={{
       background: '#fff',
       borderRadius: 12,
       boxShadow: '0 2px 16px rgba(0,0,0,0.07), 0 1.5px 4px rgba(0,0,0,0.04)',
       padding: 0,
       display: 'flex',
-      width: '100%',
-      flexDirection: 'column',
+      flexDirection: 'row',
       alignItems: 'stretch',
       position: 'relative',
       transition: 'box-shadow 0.2s',
       overflow: 'hidden',
-      justifyContent: 'flex-start',
+      minHeight: 160,
+      width: '100%',
+      maxWidth: 480,
     }}
   >
     <div
       style={{
-        width: '100%',
-        aspectRatio: '16/9',
+        width: 110,
+        minWidth: 110,
+        height: 160,
         backgroundImage: `url(${cover})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'top center',
+        backgroundPosition: 'center',
         borderTopLeftRadius: 12,
-        borderTopRightRadius: 12,
-        minHeight: 0,
+        borderBottomLeftRadius: 12,
+        flexShrink: 0,
       }}
     />
     <div
@@ -42,7 +44,7 @@ export const BookCard: FunctionComponent<BookCardProps> = ({ title, author, cove
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         padding: '18px 20px 20px 20px',
         position: 'relative',
         minHeight: 0,
@@ -54,7 +56,7 @@ export const BookCard: FunctionComponent<BookCardProps> = ({ title, author, cove
           fontSize: '1.08rem',
           color: '#222',
           lineHeight: 1.2,
-          marginBottom: 2,
+          marginBottom: 6,
           textAlign: 'left',
           width: '100%',
         }}
@@ -97,8 +99,8 @@ export const BookCard: FunctionComponent<BookCardProps> = ({ title, author, cove
           whiteSpace: 'nowrap',
         }}
       >
-        Obtener PDF
+        ¡Lo quiero!
       </a>
     </div>
-  </div>
+  </li>
 );

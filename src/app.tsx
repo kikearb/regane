@@ -21,12 +21,21 @@ export function App() {
 
       <div style={{ textAlign: 'left', maxWidth: 600, margin: '0 auto 2em auto' }}>
         <p>
-          Puede que no sepas qué leer, aquí tienes algunas recomendaciones que te pueden gustar...
+          Puede que no sepas qué leer, aquí tien<strong>es</strong> algunas recomendaciones que{' '}
+          <strong>t</strong>e pueden g<strong>u</strong>star.
         </p>
         <p>
           No sé si serás capaz de conseguirlos...
           <br />
-          <a href="#aiudita">¿Necesitas ayuda?</a>
+          <a
+            href="#aiudita"
+            style={{
+              textDecoration: 'underline',
+              color: 'inherit',
+            }}
+          >
+            ¿Necesitas ayuda?
+          </a>
         </p>
       </div>
 
@@ -93,12 +102,11 @@ export function App() {
           preocupes, es muy fácil.
         </p>
         <p>
-          Seguro que no se cansan de decirte <strong>qué día es hoy</strong>, ¿verdad?
+          Seguro que no se cansan de decirte <u>qué día es hoy</u>, ¿verdad?
           <br />
-          Pues eso es tan importante como lo vieja que te haces...Así que{' '}
-          <strong>todo juntito y con las iniciales en mayúscula</strong>
+          Pues eso es tan importante como cuantos años <strong>cumple</strong>s... Así que{' '}
+          <u>todo juntito y con las iniciales en mayúscula</u>
         </p>
-        <p>Bueno, los numeritos también en mayúscula, que no se diga.</p>
         <p style={{ marginTop: '2em' }}>¿Aún no lo tienes claro? ¿Necesitas una pista?</p>
         <button
           type="button"

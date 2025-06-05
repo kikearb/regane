@@ -120,6 +120,7 @@ export function App() {
             fontSize: '1em',
             boxShadow: '0 1px 4px rgba(0,0,0,0.07)',
             transition: 'background 0.2s',
+            color: 'inherit',
           }}
           onClick={() => setShowClue((v) => !v)}
         >
